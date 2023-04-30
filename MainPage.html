@@ -29,26 +29,7 @@
         margin: 0 auto;
         width: 60%; /* added this line to make the image smaller */
       }
-      .party-button {
-        background-color: #ff9900;
-        border: none;
-        border-radius: 10px;
-        color: #fff;
-        font-size: 24px;
-        font-weight: bold;
-        padding: 10px 20px;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-      
-      .party-button:hover {
-        background-color: #ff6600;
-        cursor: pointer;
-      }
+
       .link-spot {
         text-align: center;
         margin-top: 20px;
@@ -71,6 +52,14 @@
         background-color: #ff6600;
         cursor: pointer;
       }
+      .confetti {
+        background-image: url(confetti-16.gif);
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
 
     </style>
   </head>
@@ -89,5 +78,10 @@
       <p>Livestream Available (Link Coming Soon)</p>
       <a href="#">Livestream</a>
     </div>
+    <script>
+      window.addEventListener('load', function() {
+        document.body.classList.add('confetti');
+      });
+    </script>
   </body>
 </html>
