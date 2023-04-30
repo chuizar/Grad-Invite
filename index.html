@@ -3,14 +3,14 @@
   <head>
     <title>Graduation Invite</title>
     <style>
-      body {
+     /* body {
         background-color: #0a2b3f;
         color: #fff;
         font-family: Arial, sans-serif;
         font-size: 16px;
         margin: 0;
         padding: 0;
-      }
+      }*/
       
       .header {
         text-align: center;
@@ -58,6 +58,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        
       }
 
 
@@ -78,7 +80,15 @@
       <p>Livestream Available (Link Coming Soon)</p>
       <a href="#">Livestream</a>
     </div>
+    <div class="link-spot">
+      <p>Graduation Ceremony</p>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=4600+Humboldt+St%2C+Denver%2C+CO+80216%2C+USA&travelmode=driving">Directions</a>
     <script>
+      window.addEventListener('load', function() {
+        document.body.classList.add('confetti');
+      });
+    </script>
+        <script>
       window.addEventListener('load', function() {
         document.body.classList.add('confetti');
       });
